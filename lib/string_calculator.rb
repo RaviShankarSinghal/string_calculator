@@ -10,6 +10,7 @@ class StringCalculator
 
     numbers_array
       .map(&:to_i)
+      .select { |n| n <= 1000 }
       .sum
   end
 
